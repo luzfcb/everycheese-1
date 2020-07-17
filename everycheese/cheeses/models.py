@@ -1,6 +1,7 @@
 from django.db import models
 
 from autoslug import AutoSlugField
+from django_countries.fields import CountryField
 from model_utils.models import TimeStampedModel
 
 
