@@ -24,6 +24,11 @@ class Cheese(TimeStampedModel):
         default=Firmness.UNSPECIFIED
     )
 
+    country_of_origin = CountryField(
+        "Country of Origin", blank=True
+    )
+
+
     def __str__(self):
         return self.name
 
